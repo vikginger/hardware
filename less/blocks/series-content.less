@@ -1,0 +1,317 @@
+// main: styles.less
+
+.series-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px 70px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+
+  .slider__list {
+    justify-content: flex-start;
+  }
+}
+
+.series-content__control {
+  width: 789px;
+  margin-bottom: 35px;
+}
+
+.series-content__main-title {
+  font-family: "PT Sans Caption";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.series-content__article {
+  width: 380px;
+  margin-right: 30px;
+  padding-top: 23px;
+  padding-left: 21px;
+  padding-right: 22px;
+  padding-bottom: 27px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.series-content__article--last {
+  display: none;
+}
+
+.series-content__control-mobile {
+  display: none;
+}
+
+.series-content__title {
+  margin-bottom: 24px;
+  font-family: 'Brutal Type';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.series-content__list {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: -6.5px;
+    z-index: 1;
+    display: block;
+    width: 17px;
+    height: 382px;
+    content: "";
+    background-image: url(../img/content/series-line.png);
+  }
+}
+
+.series-content__item {
+
+  position: relative;
+  margin-left: 21px;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 20px;
+  }
+
+  a {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #333333;
+    text-decoration: none;
+    transition: color .2s linear;
+  }
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    left: -24px;
+    z-index: 1;
+    display: block;
+    width: 10px;
+    height: 10px;
+    content: "";
+    border-radius: 50%;
+    background-color: #828282;
+    transition: background .2s linear;
+  }
+
+  &:hover {
+    a {
+      color: #FAAF3F;
+    }
+
+    &:hover::before {
+      background-color: #FAAF3F;
+    }
+  }
+}
+
+.series-content__btn {
+  display: block;
+  width: 197px;
+  height: 32px;
+  margin: 0 auto;
+  padding: 7px 0;
+  font-family: 'Brutal Type';
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: @orange-btn;
+  border-radius: 2px;
+  transition: background .2s linear;
+}
+
+.series-content__btn:hover {
+  background-color: #F49F21;
+}
+
+@media (max-width: 1024px) {
+
+  .series-content {
+    width: 1024px;
+    padding: 0px 10px;
+    padding-bottom: 37px;
+  }
+
+  .series-content__control {
+    width: 730px;
+
+    .slider__toggles {
+      display: none;
+    }
+  }
+
+  .series-content__article {
+    width: 350px;
+  }
+
+  .series-content__item:hover {
+    a {
+      color: #333333;
+    }
+
+    &:hover::before {
+      background-color: #828282;
+    }
+  }
+
+  .series-content__btn:hover {
+    background-color: @orange-btn;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .series-content {
+    width: 768px;
+    padding: 0px;
+  }
+
+  .series-content__slider {
+
+    width: 753px;
+    overflow: hidden;
+
+    .slider__list {
+      margin-left: 15px;
+      margin-bottom: 42px;
+    }
+
+  }
+
+  .series-content__main-title {
+    margin-left: 15px;
+  }
+
+  .series-content__control {
+    margin-bottom: 46px;
+  }
+
+
+  .series-content__article {
+    flex-basis: 325px;
+    flex-shrink: 0;
+    width: 325px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .series-content__article--last {
+    display: block;
+  }
+
+  .series-content__item:last-child {
+    margin-bottom: 36px;
+  }
+
+  .series-content__btn {
+    width: 285px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .series-content {
+    width: 320px;
+  }
+
+  .series-content__control {
+    display: none;
+  }
+
+  .series-content__slider {
+
+    width: 305px;
+    overflow: hidden;
+
+    .slider__list {
+      margin-top: 26px;
+      margin-left: 15px;
+      margin-bottom: 58px;
+    }
+
+  }
+
+  .series-content__control-mobile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+  }
+
+  .series-content__tag-mobile {
+    width: 92px;
+    height: 24px;
+    padding: 4px 0;
+    font-family: 'Brutal Type';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #333333;
+    border-radius: 2px;
+  }
+
+  .series-content__alllink-mobile {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #0776D2;
+  }
+
+  .series-content__list {
+
+    &::before {
+      left: -4px;
+      background-image: url(../img/content/series-line-mobile.png);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .series-content__title {
+    margin-bottom: 26px;
+  }
+
+
+  .series-content__article {
+    flex-basis: 288px;
+    flex-shrink: 0;
+    width: 288px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .series-content__item:nth-child(4) {
+    display: none;
+  }
+
+  .series-content__item:nth-child(5) {
+    display: none;
+  }
+
+  .series-content__btn {
+    width: 248px;
+  }
+
+}

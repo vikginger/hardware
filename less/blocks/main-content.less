@@ -1,0 +1,88 @@
+// main: styles.less
+main {
+  max-width: 1920px;
+}
+
+.main-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 71px;
+  padding-right: 67px;
+  padding-top: 36.5px;
+  padding-bottom: 38px;
+  background-color: #ffffff;
+}
+
+.main-content__title {
+  margin-bottom: 40px;
+  font-family: "PT Sans Caption";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.main-content__wrapper {
+  display: flex;
+}
+
+
+
+@media (max-width: 1440px) {
+  main {
+    max-width: 1440px;
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    max-width: 1024px;
+  }
+
+  .main-content {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 25px 10px;
+    padding-top: 29px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 768px;
+  }
+
+  .main-content {
+    width: 768px;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 37px;
+  }
+
+  .main-content__title {
+    margin-left: 15px;
+    margin-bottom: 42px;
+  }
+
+  .content__aside {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  main {
+    max-width: 320px;
+  }
+
+  .main-content {
+    width: 320px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .main-content__title {
+    margin-left: 11px;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+}
