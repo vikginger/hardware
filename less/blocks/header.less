@@ -61,8 +61,8 @@
   z-index: 10;
   display: flex;
   justify-content: space-between;
-  padding-top: 17px;
-  padding-bottom: 14px;
+  padding-top: 13px;
+  padding-bottom: 12px;
   padding-left: 47.3px;
   padding-right: 14px;
   background-color: #ffffff;
@@ -74,7 +74,7 @@
 }
 
 .header__burger {
-  margin-right: 42px;
+  margin-right: 28px;
   padding: 0;
   background: none;
   border: none;
@@ -114,11 +114,21 @@
   bottom: -5px;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav-link {
-  margin-right: 49px;
+  display: block;
+  width: 91px;
+  height: 24px;
+  margin-right: 12px;
+  padding: 3px 0;
   font-family: 'Brutal Type';
   font-weight: 400;
   font-size: 16px;
+  text-align: center;
   text-decoration: none;
   color: #000000;
 }
@@ -128,8 +138,6 @@
 }
 
 .nav-link:hover {
-  width: 91px;
-  height: 24px;
   color: #ffffff;
   background-color: @orange-btn;
   border-radius: 2px;
@@ -147,6 +155,10 @@
   background-image: url(../img/search.png);
   border: none;
   cursor: pointer;
+}
+
+.header__search--nav {
+  margin-top: 4px;
 }
 
 .header__search--mobile {
@@ -176,6 +188,7 @@
   .header__text {
     width: 550px;
     margin-left: 20px;
+    margin-top: 6px;
   }
 
   .header__burger {
@@ -190,6 +203,17 @@
     padding-left: 41px;
     padding-right: 22px;
   }
+
+  .nav-link {
+    width: auto;
+    margin-right: 52px;
+  }
+
+  .nav-link:hover {
+    color: #000000;
+    background-color: transparent;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -242,7 +266,7 @@
 
   .header__nav {
     padding-left: 19px;
-    padding-right: 14px;
+    padding-right: 10px;
   }
 
   .header__burger--nav {
@@ -250,7 +274,8 @@
   }
 
   .nav-link {
-    margin-right: 78px;
+    width: auto;
+    margin-right: 82px;
   }
 
   .header__search {
@@ -259,6 +284,10 @@
     margin-left: 72.88px;
     font-size: 16px;
     background-image: none;
+  }
+
+  .header__search--nav {
+    margin-top: 0;
   }
 }
 
@@ -310,6 +339,10 @@
     height: 34px;
   }
 
+  .header__logo-img {
+    margin-left: 8px;
+  }
+
   .header__search--mobile {
     display: block;
     width: 13.01px;
@@ -332,7 +365,7 @@
   .nav-link {
     font-family: "PT Sans Caption";
     font-size: 14px;
-    margin-right: 7px;
+    margin-right: 11px;
   }
 
   .header__search--nav {
