@@ -195,6 +195,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -287,6 +288,7 @@
   font-family: 'Brutal Type';
   font-size: 14px;
   line-height: 18px;
+  letter-spacing: 0.02em;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -317,6 +319,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
+    letter-spacing: -0.02em;
     color: #FFFFFF;
     text-shadow: rgba(0, 0, 0, 0.33) 0px 1px 1px;
   }
@@ -355,8 +358,52 @@
     padding-bottom: 20px;
   }
 
+  .aside-article__hover-wrapper:hover {
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+
+  }
+
+  .aside-article__inner:hover,
+  .aside-article__videoimg:hover {
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+
+  }
+
+
   .aside-article__item {
     margin-left: 17px;
+  }
+
+  .aside-article__item {
+
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 23px;
+
+    &:hover {
+
+      a {
+        color: #333333;
+      }
+
+      &:hover::before {
+        background-color: #828282;
+      }
+    }
   }
 
   .aside-article--series {
@@ -364,5 +411,13 @@
     .aside-article__title {
       margin-bottom: 27px;
     }
+  }
+
+  .aside-article__alllink:hover {
+    text-decoration: none;
+  }
+
+  .aside-article__btn:hover {
+    background-color: @orange-btn;
   }
 }
