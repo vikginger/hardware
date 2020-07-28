@@ -21,11 +21,12 @@
     z-index: 10;
     bottom: 8px;
     left: 8px;
-    display: none;
     width: 19.75px;
     height: 20px;
     content: "";
     background-image: url(../img/hover/bottom-left.png);
+    opacity: 0;
+    transition: 0.5s;
   }
 
   &::after {
@@ -33,11 +34,12 @@
     z-index: 10;
     bottom: 8px;
     right: 8px;
-    display: none;
     width: 19.75px;
     height: 20px;
     content: "";
     background-image: url(../img/hover/bottom-right.png);
+    opacity: 0;
+    transition: 0.5s;
   }
 }
 
@@ -49,22 +51,24 @@
     position: absolute;
     top: 8px;
     left: 8px;
-    display: none;
     width: 19.75px;
     height: 20px;
     content: "";
     background-image: url(../img/hover/top-left.png);
+    opacity: 0;
+    transition: 0.5s;
   }
 
   &::after {
     position: absolute;
     top: 8px;
     right: 8px;
-    display: none;
     width: 19.75px;
     height: 20px;
     content: "";
     background-image: url(../img/hover/top-right.png);
+    opacity: 0;
+    transition: 0.5s;
   }
 
 }
@@ -72,11 +76,11 @@
 .article__hover-wrapper:hover {
 
   &::before {
-    display: block;
+    opacity: 1;
   }
 
   &::after {
-    display: block;
+    opacity: 1;
   }
 
 }
@@ -84,11 +88,11 @@
 .article:hover {
 
   &::before {
-    display: block;
+    opacity: 1;
   }
 
   &::after {
-    display: block;
+    opacity: 1;
   }
 
 }
@@ -267,56 +271,56 @@
 
   &--views::before {
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: -20px;
     z-index: 1;
     display: block;
     width: 14px;
     height: 16px;
     content: "";
-    background-image: url(../img/content/views.png);
+    background-image: url(../img/content/views.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--visits::before {
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: -19px;
     z-index: 1;
     display: block;
     width: 14px;
     height: 16px;
     content: "";
-    background-image: url(../img/content/visits.png);
+    background-image: url(../img/content/visits.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--comments::before {
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: -18px;
     z-index: 1;
     display: block;
     width: 14px;
     height: 16px;
     content: "";
-    background-image: url(../img/content/comments.png);
+    background-image: url(../img/content/comments.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--reposts::before {
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: -18px;
     z-index: 1;
     display: block;
     width: 14px;
     height: 16px;
     content: "";
-    background-image: url(../img/content/reposts.png);
+    background-image: url(../img/content/reposts.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
