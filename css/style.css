@@ -578,7 +578,7 @@ main {
   padding-top: 150px;
   padding-left: 20px;
   padding-right: 19px;
-  background-image: url(../img/content/article1.jpg);
+  background-image: url(../img/content/article/article1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -601,7 +601,7 @@ main {
   padding-top: 85px;
   padding-left: 20px;
   padding-right: 67px;
-  background-image: url(../img/content/article2.jpg);
+  background-image: url(../img/content/article/article2.jpg);
 }
 .article--second .article__tag {
   margin-bottom: 40px;
@@ -624,7 +624,7 @@ main {
   padding-top: 85px;
   padding-left: 20px;
   padding-right: 45px;
-  background-image: url(../img/content/article3.jpg);
+  background-image: url(../img/content/article/article3.jpg);
 }
 .article--third .article__tag {
   margin-bottom: 40px;
@@ -787,6 +787,7 @@ main {
     padding-top: 153px;
     padding-left: 22px;
     padding-right: 18px;
+    background-image: url(../img/content/article/article1-1024.jpg);
   }
   .article--first .acrticle__title {
     margin-right: 150px;
@@ -798,6 +799,7 @@ main {
     width: 354px;
     padding-right: 20px;
     padding-bottom: 30px;
+    background-image: url(../img/content/article/article2-1024.jpg);
   }
   .article--second .acticle__text {
     display: none;
@@ -809,6 +811,7 @@ main {
     width: 354px;
     padding-right: 117px;
     padding-bottom: 30px;
+    background-image: url(../img/content/article/article3-1024.jpg);
   }
 }
 @media (max-width: 768px) {
@@ -818,6 +821,7 @@ main {
     margin-bottom: -10px;
     padding-top: 72px;
     padding-left: 19px;
+    background-image: url(../img/content/article/article1-768.jpg);
   }
   .article--first .article__tag {
     margin-bottom: 25px;
@@ -842,6 +846,7 @@ main {
     margin-right: 0;
     margin-bottom: 15px;
     padding-top: 72px;
+    background-image: url(../img/content/article/article2-768.jpg);
   }
   .article--second .article__tag {
     margin-bottom: 25px;
@@ -860,6 +865,7 @@ main {
     width: 768px;
     height: 386px;
     padding-top: 72px;
+    background-image: url(../img/content/article/article3-768.jpg);
   }
   .article--third .article__tag {
     margin-bottom: 25px;
@@ -880,6 +886,7 @@ main {
     padding-top: 114px;
     padding-left: 14px;
     padding-right: 15px;
+    background-image: url(../img/content/article/article1-320.jpg);
   }
   .article--first .article__tag {
     margin-bottom: 23px;
@@ -903,6 +910,7 @@ main {
     padding-top: 114px;
     padding-left: 14px;
     padding-right: 15px;
+    background-image: url(../img/content/article/article2-320.jpg);
   }
   .article--second .article__tag {
     margin-bottom: 22px;
@@ -922,6 +930,7 @@ main {
     padding-top: 114px;
     padding-left: 14px;
     padding-right: 15px;
+    background-image: url(../img/content/article/article3-320.jpg);
   }
   .article--third .article__tag {
     margin-bottom: 22px;
