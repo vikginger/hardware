@@ -131,3 +131,27 @@
     flex-shrink: 0;
   }
 }
+
+@media (max-width: 1023px) {
+  .small-article__hover-wrapper:hover {
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .small-article:hover {
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
