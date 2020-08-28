@@ -1,10 +1,7 @@
 .aside-article {
   width: 251px;
   margin-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 17px;
-  padding-bottom: 18px;
+  padding: 20px 17px 18px 20px;
   background-color: #ffffff;
   box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
 
@@ -21,7 +18,7 @@
 
   .aside-article__title {
     margin-bottom: 26px;
-    font-family: 'Brutal Type';
+    font-family: 'Brutal Type', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -70,7 +67,7 @@
   }
 
   .aside-article__title {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 15px;
     line-height: 21px;
@@ -191,24 +188,30 @@
 }
 
 .aside-article__tag {
-  display: inline-block;
+  display: table;
   width: 92px;
   height: 24px;
-  padding: 3px 0;
-  font-family: 'Brutal Type';
+  background-color: #333333;
+  border-radius: 2px;
+}
+
+.aside-article__tag p {
+  display: table-cell;
+  padding: 0;
+  margin: 0;
+  font-family: 'Brutal Type', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.02em;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   color: #FFFFFF;
-  background-color: #333333;
-  border-radius: 2px;
 }
 
 .aside-article__alllink {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
@@ -248,7 +251,7 @@
   margin-bottom: 23px;
 
   a {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
@@ -289,7 +292,7 @@
   height: 32px;
   margin: 0 auto;
   padding: 7px 0;
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.02em;
@@ -309,9 +312,7 @@
   display: block;
   width: 215px;
   height: 238px;
-  padding-top: 60px;
-  padding-left: 20px;
-  padding-right: 18px;
+  padding: 60px 18px 0 20px;
   background-image: url(../img/content/aside-test.jpg);
   background-size: cover;
   background-position: center;
@@ -319,7 +320,7 @@
 
   .aside-article__title {
     margin-bottom: 63px;
-    font-family: 'Brutal Type';
+    font-family: 'Brutal Type', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
@@ -332,7 +333,7 @@
 
 .aside-article__date {
   display: block;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 21px;
@@ -341,7 +342,7 @@
 
 .aside-article__time {
   display: block;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -349,7 +350,7 @@
 }
 
 .aside-article__text {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;

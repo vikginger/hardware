@@ -79,10 +79,7 @@ img {
   display: flex;
   justify-content: space-between;
   height: 173px;
-  padding-top: 16px;
-  padding-bottom: 14px;
-  padding-left: 47.3px;
-  padding-right: 19px;
+  padding: 16px 19px 14px 47px;
   background-color: #223036;
 }
 .header__logo-link {
@@ -100,14 +97,14 @@ img {
   align-self: center;
   width: 658px;
   margin-left: 39px;
-  font-family: "PT Sans Caption";
+  font-family: "PT Sans Caption", sans-serif;
   font-size: 14px;
   line-height: 22px;
   color: #ffffff;
 }
 .header__entrance {
   align-self: flex-start;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 15px;
   line-height: 10px;
   text-decoration: none;
@@ -121,10 +118,7 @@ img {
   z-index: 10;
   display: flex;
   justify-content: space-between;
-  padding-top: 13px;
-  padding-bottom: 12px;
-  padding-left: 47.3px;
-  padding-right: 14px;
+  padding: 13px 14px 12px 47px;
   background-color: #ffffff;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
 }
@@ -144,8 +138,8 @@ img {
 .header__burger-item {
   position: relative;
   display: block;
-  width: 14.17px;
-  height: 2.04px;
+  width: 14px;
+  height: 2px;
   font-size: 0;
   color: transparent;
   background-color: #333333;
@@ -176,7 +170,7 @@ img {
   height: 24px;
   margin-right: 12px;
   padding: 3px 0;
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -193,9 +187,11 @@ img {
   border-radius: 2px;
 }
 .header__search {
-  width: 15.28px;
-  height: 14.32px;
-  font-family: 'Brutal Type';
+  display: block;
+  width: 15px;
+  height: 14px;
+  position: relative;
+  font-family: 'Brutal Type', sans-serif;
   font-weight: 400;
   font-size: 0;
   text-decoration: none;
@@ -203,6 +199,16 @@ img {
   background: none;
   background-image: url(../img/search.svg);
   border: none;
+  cursor: pointer;
+}
+.header__search::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  width: 23px;
+  height: 21px;
   cursor: pointer;
 }
 .header__search--nav {
@@ -241,7 +247,7 @@ img {
     margin-right: 16px;
   }
   .header__burger-item {
-    width: 12.17px;
+    width: 12px;
   }
   .header__nav {
     padding-left: 41px;
@@ -271,7 +277,7 @@ img {
   }
   .header__burger-item {
     width: 19px;
-    height: 2.67px;
+    height: 3px;
     background-color: #ffffff;
   }
   .header__burger-item::before,
@@ -311,7 +317,7 @@ img {
   .header__search {
     width: auto;
     height: auto;
-    margin-left: 72.88px;
+    margin-left: 73px;
     font-size: 16px;
     background-image: none;
   }
@@ -326,10 +332,7 @@ img {
   .header__inner-up {
     align-items: center;
     height: 48px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 7px 16px;
   }
   .header__burger--inner {
     align-self: center;
@@ -338,7 +341,7 @@ img {
   }
   .header__burger-item {
     width: 19px;
-    height: 2.67px;
+    height: 3px;
     background-color: #ffffff;
   }
   .header__burger-item::before,
@@ -360,8 +363,8 @@ img {
   }
   .header__search--mobile {
     display: block;
-    width: 14.02px;
-    height: 14.02px;
+    width: 14px;
+    height: 14px;
     margin-left: 160px;
     font-size: 0;
     background-image: url(../img/search-mobile.svg);
@@ -382,7 +385,7 @@ img {
     width: 100%;
   }
   .nav-link {
-    font-family: "PT Sans Caption";
+    font-family: "PT Sans Caption", sans-serif;
     font-size: 14px;
     margin-right: 13px;
   }
@@ -397,15 +400,12 @@ main {
 .main-content {
   width: 62.5%;
   margin: 0 auto;
-  padding-left: 71px;
-  padding-right: 67px;
-  padding-top: 36.5px;
-  padding-bottom: 35px;
+  padding: 36px 67px 35px 71px;
   background-color: #ffffff;
 }
 .main-content__title {
   margin-bottom: 40px;
-  font-family: "PT Sans Caption";
+  font-family: "PT Sans Caption", sans-serif;
   font-weight: 400;
   font-size: 28px;
   letter-spacing: -0.02em;
@@ -430,9 +430,7 @@ main {
   .main-content {
     width: 1024px;
     margin: 0 auto;
-    padding: 25px 10px;
-    padding-top: 29px;
-    padding-bottom: 30px;
+    padding: 29px 10px 30px;
   }
   .main-content__title {
     margin-bottom: 42px;
@@ -445,9 +443,7 @@ main {
   .main-content {
     width: 100%;
     margin: 0;
-    padding: 0;
-    padding-top: 34px;
-    padding-bottom: 37px;
+    padding: 34px 0 37px;
   }
   .main-content__wrapper {
     width: 100%;
@@ -483,7 +479,7 @@ main {
 }
 .content__message {
   margin-bottom: 25px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
@@ -515,9 +511,7 @@ main {
     margin-bottom: 26px;
   }
   .content__message {
-    margin-left: 17px;
-    margin-right: 18px;
-    margin-bottom: 27px;
+    margin: 0 18px 27px 17px;
   }
 }
 .article__wrapper--first {
@@ -593,9 +587,7 @@ main {
 .article--first {
   width: 789px;
   height: 492px;
-  padding-top: 150px;
-  padding-left: 20px;
-  padding-right: 19px;
+  padding: 150px 19px 0 20px;
   background-image: url(../img/content/article/article1.jpg);
   background-size: cover;
   background-position: center;
@@ -616,9 +608,7 @@ main {
 .article--second {
   width: 517px;
   height: 492px;
-  padding-top: 85px;
-  padding-left: 20px;
-  padding-right: 67px;
+  padding: 85px 67px 0 20px;
   background-image: url(../img/content/article/article2.jpg);
 }
 .article--second .article__tag {
@@ -639,9 +629,7 @@ main {
 .article--third {
   width: 247px;
   height: 492px;
-  padding-top: 85px;
-  padding-left: 20px;
-  padding-right: 45px;
+  padding: 85px 45px 0 20px;
   background-image: url(../img/content/article/article3.jpg);
 }
 .article--third .article__tag {
@@ -660,23 +648,27 @@ main {
   margin-left: 21px;
 }
 .article__tag {
-  display: inline-block;
+  display: table;
   width: 118px;
   height: 24px;
-  padding: 4px 0;
+  background-color: #FAAF3F;
+  border-radius: 2px;
+}
+.article__tag p {
+  display: table-cell;
+  padding: 0;
+  margin: 0;
   font-weight: 500;
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-size: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   color: #ffffff;
-  background-color: #FAAF3F;
-  border-radius: 2px;
 }
 .acrticle__title {
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-weight: 700;
   font-size: 24px;
   letter-spacing: -0.02em;
@@ -686,7 +678,7 @@ main {
   text-shadow: rgba(0, 0, 0, 0.75) 0 2px 5px;
 }
 .acticle__text {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -697,14 +689,14 @@ main {
   justify-content: space-between;
 }
 .article__author {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
   color: #ffffff;
 }
 .article__date {
-  font-family: 'PT Sans Caption';
+  font-family: 'PT Sans Caption', sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 24px;
@@ -719,14 +711,10 @@ main {
 .acticle__info-item {
   position: relative;
   margin-right: 27px;
-  font-family: 'PT Sans Caption';
+  font-family: 'PT Sans Caption', sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 24px;
-  color: #ffffff;
-}
-.acticle__info-item a {
-  text-decoration: none;
   color: #ffffff;
 }
 .acticle__info-item:last-child {
@@ -790,9 +778,7 @@ main {
   }
   .article--first {
     width: 730px;
-    padding-top: 153px;
-    padding-left: 22px;
-    padding-right: 18px;
+    padding: 153px 18px 0 22px;
     background-image: url(../img/content/article/article1-1024.jpg);
   }
   .article--first .acrticle__title {
@@ -918,9 +904,7 @@ main {
 }
 @media (max-width: 767px) {
   .article--first {
-    padding-top: 114px;
-    padding-left: 14px;
-    padding-right: 15px;
+    padding: 114px 15px 0 14px;
     background-image: url(../img/content/article/article1-320.jpg);
   }
   .article--first .article__tag {
@@ -941,9 +925,7 @@ main {
     margin-left: 18px;
   }
   .article--second {
-    padding-top: 114px;
-    padding-left: 14px;
-    padding-right: 15px;
+    padding: 114px 15px 0 14px;
     background-image: url(../img/content/article/article2-320.jpg);
   }
   .article--second .article__tag {
@@ -961,9 +943,7 @@ main {
     margin-bottom: 9px;
   }
   .article--third {
-    padding-top: 114px;
-    padding-left: 14px;
-    padding-right: 15px;
+    padding: 114px 15px 0 14px;
     background-image: url(../img/content/article/article3-320.jpg);
   }
   .article--third .article__tag {
@@ -1005,7 +985,7 @@ main {
   margin-right: 52px;
 }
 .slider__option a {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 27px;
@@ -1021,6 +1001,7 @@ main {
 .slider__toggle {
   width: 13px;
   height: 13px;
+  position: relative;
   border: 0;
   border-top: 2.25px solid rgba(81, 110, 119, 0.43);
   border-left: 2.25px solid rgba(81, 110, 119, 0.43);
@@ -1035,6 +1016,21 @@ main {
 .slider__toggle--right {
   transform: rotate(135deg);
 }
+.slider__toggle::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+}
+.slider__toggle--left::before {
+  top: -85%;
+  left: -70%;
+}
+.slider__toggle--right::before {
+  top: -90%;
+  left: -75%;
+}
 .slider__toggle:focus {
   outline: none;
   border-top: 2.25px solid #ffb700;
@@ -1042,7 +1038,6 @@ main {
 }
 .slider__list {
   display: flex;
-  justify-content: space-between;
 }
 @media (max-width: 1439px) {
   .slider__wrapper {
@@ -1059,7 +1054,6 @@ main {
   }
   .slider__options {
     width: 66%;
-    justify-content: space-between;
   }
   .slider__option--active {
     border-bottom: 4px solid #F7AB32;
@@ -1128,9 +1122,7 @@ main {
   width: 250px;
   height: 177px;
   margin-right: 20px;
-  padding: 20px;
-  padding-top: 14px;
-  padding-left: 20px;
+  padding: 14px 20px 20px;
   position: relative;
 }
 .small-article--first {
@@ -1175,7 +1167,7 @@ main {
 }
 .small-article__title {
   margin-bottom: 76px;
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-weight: 700;
   font-size: 15px;
   letter-spacing: -0.02em;
@@ -1212,10 +1204,7 @@ main {
 .aside-article {
   width: 251px;
   margin-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 17px;
-  padding-bottom: 18px;
+  padding: 20px 17px 18px 20px;
   background-color: #ffffff;
   box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.2);
 }
@@ -1227,7 +1216,7 @@ main {
 }
 .aside-article--series .aside-article__title {
   margin-bottom: 26px;
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1259,7 +1248,7 @@ main {
   margin-bottom: 12px;
 }
 .aside-article--videos .aside-article__title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 21px;
@@ -1353,23 +1342,28 @@ main {
   justify-content: space-between;
 }
 .aside-article__tag {
-  display: inline-block;
+  display: table;
   width: 92px;
   height: 24px;
-  padding: 3px 0;
-  font-family: 'Brutal Type';
+  background-color: #333333;
+  border-radius: 2px;
+}
+.aside-article__tag p {
+  display: table-cell;
+  padding: 0;
+  margin: 0;
+  font-family: 'Brutal Type', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.02em;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   color: #FFFFFF;
-  background-color: #333333;
-  border-radius: 2px;
 }
 .aside-article__alllink {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
@@ -1404,7 +1398,7 @@ main {
   margin-bottom: 23px;
 }
 .aside-article__item a {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;
@@ -1437,7 +1431,7 @@ main {
   height: 32px;
   margin: 0 auto;
   padding: 7px 0;
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.02em;
@@ -1455,9 +1449,7 @@ main {
   display: block;
   width: 215px;
   height: 238px;
-  padding-top: 60px;
-  padding-left: 20px;
-  padding-right: 18px;
+  padding: 60px 18px 0 20px;
   background-image: url(../img/content/aside-test.jpg);
   background-size: cover;
   background-position: center;
@@ -1465,7 +1457,7 @@ main {
 }
 .aside-article__inner .aside-article__title {
   margin-bottom: 63px;
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
@@ -1475,7 +1467,7 @@ main {
 }
 .aside-article__date {
   display: block;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 21px;
@@ -1483,14 +1475,14 @@ main {
 }
 .aside-article__time {
   display: block;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #516E77;
 }
 .aside-article__text {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;
@@ -1522,8 +1514,7 @@ main {
 .series-content {
   width: 62.5%;
   margin: 0 auto;
-  padding: 0px 70px;
-  padding-bottom: 30px;
+  padding: 0px 70px 30px;
   background-color: #ffffff;
 }
 .series-content .slider__list {
@@ -1534,7 +1525,7 @@ main {
   margin-bottom: 35px;
 }
 .series-content__main-title {
-  font-family: "PT Sans Caption";
+  font-family: "PT Sans Caption", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 22px;
@@ -1544,10 +1535,7 @@ main {
 .series-content__article {
   width: 380px;
   margin-right: 30px;
-  padding-top: 24px;
-  padding-left: 21px;
-  padding-right: 22px;
-  padding-bottom: 27px;
+  padding: 24px 22px 27px 21px;
   background-color: #ffffff;
   box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
 }
@@ -1559,7 +1547,7 @@ main {
 }
 .series-content__title {
   margin-bottom: 24px;
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1592,7 +1580,7 @@ main {
   margin-bottom: 21px;
 }
 .series-content__item a {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;
@@ -1625,7 +1613,7 @@ main {
   height: 32px;
   margin: 0 auto;
   padding: 7px 0;
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.02em;
@@ -1647,8 +1635,7 @@ main {
 @media (max-width: 1439px) {
   .series-content {
     width: 1024px;
-    padding: 0px 10px;
-    padding-bottom: 37px;
+    padding: 0px 10px 37px;
   }
   .series-content__control {
     width: 730px;
@@ -1719,9 +1706,7 @@ main {
     overflow: hidden;
   }
   .series-content__slider .slider__list {
-    margin-top: 26px;
-    margin-left: 15px;
-    margin-bottom: 58px;
+    margin: 26px 0 58px 15px;
   }
   .series-content__control-mobile {
     display: flex;
@@ -1729,22 +1714,27 @@ main {
     margin-bottom: 13px;
   }
   .series-content__tag-mobile {
+    display: table;
     width: 92px;
     height: 24px;
-    padding: 4px 0;
-    font-family: 'Brutal Type';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
     background-color: #333333;
     border-radius: 2px;
   }
+  .series-content__tag-mobile p {
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+    font-family: 'Brutal Type', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #FFFFFF;
+  }
   .series-content__alllink-mobile {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -1764,9 +1754,7 @@ main {
     flex-shrink: 0;
     width: 288px;
     margin-right: 20px;
-    padding-top: 21px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding: 21px 22px 20px 20px;
   }
   .series-content__item {
     margin-left: 16px;

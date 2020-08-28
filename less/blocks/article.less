@@ -101,9 +101,7 @@
 .article--first {
   width: 789px;
   height: 492px;
-  padding-top: 150px;
-  padding-left: 20px;
-  padding-right: 19px;
+  padding: 150px 19px 0 20px;
   background-image: url(../img/content/article/article1.jpg);
   background-size: cover;
   background-position: center;
@@ -130,9 +128,7 @@
 .article--second {
   width: 517px;
   height: 492px;
-  padding-top: 85px;
-  padding-left: 20px;
-  padding-right: 67px;
+  padding: 85px 67px 0 20px;
   background-image: url(../img/content/article/article2.jpg);
 
   .article__tag {
@@ -160,9 +156,7 @@
 .article--third {
   width: 247px;
   height: 492px;
-  padding-top: 85px;
-  padding-left: 20px;
-  padding-right: 45px;
+  padding: 85px 45px 0 20px;
   background-image: url(../img/content/article/article3.jpg);
 
   .article__tag {
@@ -188,24 +182,29 @@
 }
 
 .article__tag {
-  display: inline-block;
+  display: table;
   width: 118px;
   height: 24px;
-  padding: 4px 0;
+  background-color: @orange-btn;
+  border-radius: 2px;
+}
+
+.article__tag p {
+  display: table-cell;
+  padding: 0;
+  margin: 0;
   font-weight: 500;
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-size: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   color: #ffffff;
-  background-color: @orange-btn;
-  border-radius: 2px;
 }
 
 .acrticle__title {
-  font-family: 'Brutal Type';
+  font-family: 'Brutal Type', sans-serif;
   font-weight: 700;
   font-size: 24px;
   letter-spacing: -0.02em;
@@ -216,7 +215,7 @@
 }
 
 .acticle__text {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -229,7 +228,7 @@
 }
 
 .article__author {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
@@ -237,7 +236,7 @@
 }
 
 .article__date {
-  font-family: 'PT Sans Caption';
+  font-family: 'PT Sans Caption', sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 24px;
@@ -254,16 +253,11 @@
 .acticle__info-item {
   position: relative;
   margin-right: 27px;
-  font-family: 'PT Sans Caption';
+  font-family: 'PT Sans Caption', sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 24px;
   color: #ffffff;
-
-  a {
-    text-decoration: none;
-    color: #ffffff;
-  }
 
   &:last-child {
     margin-right: 0;
@@ -339,9 +333,7 @@
 
   .article--first {
     width: 730px;
-    padding-top: 153px;
-    padding-left: 22px;
-    padding-right: 18px;
+    padding: 153px 18px 0 22px;
     background-image: url(../img/content/article/article1-1024.jpg);
 
     .acrticle__title {
@@ -514,9 +506,7 @@
 @media (max-width: 767px) {
 
   .article--first {
-    padding-top: 114px;
-    padding-left: 14px;
-    padding-right: 15px;
+    padding: 114px 15px 0 14px;
     background-image: url(../img/content/article/article1-320.jpg);
 
     .article__tag {
@@ -544,9 +534,7 @@
   }
 
   .article--second {
-    padding-top: 114px;
-    padding-left: 14px;
-    padding-right: 15px;
+    padding: 114px 15px 0 14px;
     background-image: url(../img/content/article/article2-320.jpg);
 
     .article__tag {
@@ -570,9 +558,7 @@
   }
 
   .article--third {
-    padding-top: 114px;
-    padding-left: 14px;
-    padding-right: 15px;
+    padding: 114px 15px 0 14px;
     background-image: url(../img/content/article/article3-320.jpg);
 
     .article__tag {
