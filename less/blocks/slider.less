@@ -64,20 +64,22 @@
 
   &::before {
     content: "";
-    width: 25px;
-    height: 25px;
+    width: 37px;
+    height: 37px;
     position: absolute;
     cursor: pointer;
   }
 
   &--left::before {
-    top: -85%;
-    left: -70%;
+    top: -157%;
+    left: -157%;
+    transform: rotate(45deg);
   }
 
   &--right::before {
-    top: -90%;
-    left: -75%;
+    top: -151%;
+    left: -150%;
+    transform: rotate(-135deg);
   }
 }
 
@@ -116,7 +118,10 @@
     &--active {
       border-bottom: 4px solid #F7AB32;
     }
+  }
 
+  .slider__list {
+    width: 100%;
   }
 }
 
